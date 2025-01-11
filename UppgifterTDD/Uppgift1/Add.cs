@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FinalAssignment.UppgifterTDD.Uppgift1
 {
-    public class Calculator
+    public class Add
     {
         public double AddFromInput(string inputA, string inputB)
         {
