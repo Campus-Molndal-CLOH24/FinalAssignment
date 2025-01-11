@@ -15,7 +15,7 @@ namespace FinalAssignment.UppgifterTDD.Uppgift1
 
             return a + b;//returnerar summan av a och b
         }
-        // har valt truyparse för att kunna hantera felaktiga inmatningar som inte är siffror
+        // har valt tryparse för att kunna hantera felaktiga inmatningar som inte är siffror
         public double AddFromInputWithValidation(string inputA, string inputB)
         {
             if (double.TryParse(inputA, out double a) && double.TryParse(inputB, out double b))
@@ -24,8 +24,7 @@ namespace FinalAssignment.UppgifterTDD.Uppgift1
             }
             else
             {
-                throw new ArgumentException("Ogiltig inmatning! Ange giltiga siffror.");  // Kasta undantag vid felaktig inmatning
-            }
+                throw new ArgumentException("Ogiltig inmatning! Ange giltiga siffror.");  // Kasta undantag vid felaktig inmatning tex abc 
         }
     }
 }
