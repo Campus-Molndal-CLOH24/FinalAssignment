@@ -8,16 +8,16 @@ using System.Threading.Tasks;
 namespace FinalAssignment.UppgifterTDD.Uppgift1
 {
     public class Calculator
-    //ADD 
     {
+        // ADD
         public double AddFromInput(string inputA, string inputB)
         {
-            double a = double.Parse(inputA);//har valt att använda double för att kunna hantera decimaltal
+            double a = double.Parse(inputA); // hanterar decimaltal
             double b = double.Parse(inputB);
-
-            return a + b;//returnerar summan av a och b
+            return a + b; // returnerar summan av a och b
         }
-        // har valt tryparse för att kunna hantera felaktiga inmatningar som inte är siffror
+
+        // ADD WITH VALIDATION (TryParse)
         public double AddFromInputWithValidation(string inputA, string inputB)
         {
             if (double.TryParse(inputA, out double a) && double.TryParse(inputB, out double b))
@@ -26,11 +26,11 @@ namespace FinalAssignment.UppgifterTDD.Uppgift1
             }
             else
             {
-                throw new ArgumentException("Ogiltig inmatning! Ange giltiga siffror.");  // Kasta undantag vid felaktig inmatning tex abc 
+                throw new ArgumentException("Ogiltig inmatning! Ange giltiga siffror."); // Kasta undantag vid felaktig inmatning
             }
         }
+
         // DIVIDE
-       
         public double DivideFromInput(string inputA, string inputB)
         {
             if (double.TryParse(inputA, out double a) && double.TryParse(inputB, out double b))
@@ -43,9 +43,10 @@ namespace FinalAssignment.UppgifterTDD.Uppgift1
             }
             else
             {
-                throw new ArgumentException("Ogiltig inmatning! Ange giltiga siffror.");  // Kasta undantag för t.ex. "abc"
+                throw new ArgumentException("Ogiltig inmatning! Ange giltiga siffror.");  // Kasta undantag vid "abc"
             }
         }
+
         // MULTIPLY
         public double MultiplyFromInput(string inputA, string inputB)
         {
@@ -55,25 +56,14 @@ namespace FinalAssignment.UppgifterTDD.Uppgift1
             }
             else
             {
-                throw new ArgumentException("Ogiltig inmatning! Ange giltiga siffror.");  // Kasta undantag för t.ex. "abc"
+                throw new ArgumentException("Ogiltig inmatning! Ange giltiga siffror.");  // Kasta undantag vid "abc"
             }
+        }
+
+        // SUBSTRACT – Dummy med return 0 för att faila testet
+        public double SubstractFromInput(string inputA, string inputB)
+        {
+            return 0;  // 
+        }
     }
 }
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
