@@ -1,0 +1,354 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<coverage line-rate="0.8604" branch-rate="0.8181" version="1.9" timestamp="1736688722" lines-covered="74" lines-valid="86" branches-covered="18" branches-valid="22">
+  <sources>
+    <source>C:\Users\maria\</source>
+  </sources>
+  <packages>
+    <package name="FinalAssignment" line-rate="0.8461" branch-rate="0.8181" complexity="23">
+      <classes>
+        <class name="Program" filename="source\repos\FinalAssignment\FinalAssignment\Program.cs" line-rate="0" branch-rate="1" complexity="1">
+          <methods>
+            <method name="&lt;Main&gt;$" signature="(System.String[])" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="2" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="2" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="FinalAssignment.UppgifterTDD.Uppgift1.Calculator" filename="source\repos\FinalAssignment\FinalAssignment\UppgifterTDD\Uppgift1\Calculator.cs" line-rate="0.8684000000000001" branch-rate="0.8181" complexity="22">
+          <methods>
+            <method name="AddFromInput" signature="(System.String,System.String)" line-rate="0.7142000000000001" branch-rate="0.5" complexity="4">
+              <lines>
+                <line number="14" hits="1" branch="False" />
+                <line number="15" hits="1" branch="True" condition-coverage="50% (2/4)">
+                  <conditions>
+                    <condition number="9" type="jump" coverage="50%" />
+                    <condition number="24" type="jump" coverage="50%" />
+                  </conditions>
+                </line>
+                <line number="16" hits="1" branch="False" />
+                <line number="17" hits="1" branch="False" />
+                <line number="20" hits="0" branch="False" />
+                <line number="21" hits="0" branch="False" />
+                <line number="23" hits="1" branch="False" />
+              </lines>
+            </method>
+            <method name="AddFromInputWithValidation" signature="(System.String,System.String)" line-rate="0.5714" branch-rate="0.5" complexity="4">
+              <lines>
+                <line number="27" hits="1" branch="False" />
+                <line number="28" hits="1" branch="True" condition-coverage="50% (2/4)">
+                  <conditions>
+                    <condition number="9" type="jump" coverage="50%" />
+                    <condition number="24" type="jump" coverage="50%" />
+                  </conditions>
+                </line>
+                <line number="29" hits="0" branch="False" />
+                <line number="30" hits="0" branch="False" />
+                <line number="33" hits="1" branch="False" />
+                <line number="34" hits="1" branch="False" />
+                <line number="36" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="DivideFromInput" signature="(System.String,System.String)" line-rate="1" branch-rate="1" complexity="6">
+              <lines>
+                <line number="40" hits="3" branch="False" />
+                <line number="41" hits="3" branch="True" condition-coverage="100% (4/4)">
+                  <conditions>
+                    <condition number="9" type="jump" coverage="100%" />
+                    <condition number="24" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="42" hits="2" branch="False" />
+                <line number="43" hits="2" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="41" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="44" hits="1" branch="False" />
+                <line number="45" hits="1" branch="False" />
+                <line number="47" hits="1" branch="False" />
+                <line number="50" hits="1" branch="False" />
+                <line number="51" hits="1" branch="False" />
+                <line number="53" hits="1" branch="False" />
+              </lines>
+            </method>
+            <method name="MultiplyFromInput" signature="(System.String,System.String)" line-rate="1" branch-rate="1" complexity="4">
+              <lines>
+                <line number="57" hits="2" branch="False" />
+                <line number="58" hits="2" branch="True" condition-coverage="100% (4/4)">
+                  <conditions>
+                    <condition number="9" type="jump" coverage="100%" />
+                    <condition number="24" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="59" hits="1" branch="False" />
+                <line number="60" hits="1" branch="False" />
+                <line number="63" hits="1" branch="False" />
+                <line number="64" hits="1" branch="False" />
+                <line number="66" hits="1" branch="False" />
+              </lines>
+            </method>
+            <method name="SubstractFromInput" signature="(System.String,System.String)" line-rate="1" branch-rate="1" complexity="4">
+              <lines>
+                <line number="70" hits="2" branch="False" />
+                <line number="71" hits="2" branch="True" condition-coverage="100% (4/4)">
+                  <conditions>
+                    <condition number="9" type="jump" coverage="100%" />
+                    <condition number="24" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="72" hits="1" branch="False" />
+                <line number="73" hits="1" branch="False" />
+                <line number="76" hits="1" branch="False" />
+                <line number="77" hits="1" branch="False" />
+                <line number="79" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="14" hits="1" branch="False" />
+            <line number="15" hits="1" branch="True" condition-coverage="50% (2/4)">
+              <conditions>
+                <condition number="9" type="jump" coverage="50%" />
+                <condition number="24" type="jump" coverage="50%" />
+              </conditions>
+            </line>
+            <line number="16" hits="1" branch="False" />
+            <line number="17" hits="1" branch="False" />
+            <line number="20" hits="0" branch="False" />
+            <line number="21" hits="0" branch="False" />
+            <line number="23" hits="1" branch="False" />
+            <line number="27" hits="1" branch="False" />
+            <line number="28" hits="1" branch="True" condition-coverage="50% (2/4)">
+              <conditions>
+                <condition number="9" type="jump" coverage="50%" />
+                <condition number="24" type="jump" coverage="50%" />
+              </conditions>
+            </line>
+            <line number="29" hits="0" branch="False" />
+            <line number="30" hits="0" branch="False" />
+            <line number="33" hits="1" branch="False" />
+            <line number="34" hits="1" branch="False" />
+            <line number="36" hits="0" branch="False" />
+            <line number="40" hits="3" branch="False" />
+            <line number="41" hits="3" branch="True" condition-coverage="100% (4/4)">
+              <conditions>
+                <condition number="9" type="jump" coverage="100%" />
+                <condition number="24" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="42" hits="2" branch="False" />
+            <line number="43" hits="2" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="41" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="44" hits="1" branch="False" />
+            <line number="45" hits="1" branch="False" />
+            <line number="47" hits="1" branch="False" />
+            <line number="50" hits="1" branch="False" />
+            <line number="51" hits="1" branch="False" />
+            <line number="53" hits="1" branch="False" />
+            <line number="57" hits="2" branch="False" />
+            <line number="58" hits="2" branch="True" condition-coverage="100% (4/4)">
+              <conditions>
+                <condition number="9" type="jump" coverage="100%" />
+                <condition number="24" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="59" hits="1" branch="False" />
+            <line number="60" hits="1" branch="False" />
+            <line number="63" hits="1" branch="False" />
+            <line number="64" hits="1" branch="False" />
+            <line number="66" hits="1" branch="False" />
+            <line number="70" hits="2" branch="False" />
+            <line number="71" hits="2" branch="True" condition-coverage="100% (4/4)">
+              <conditions>
+                <condition number="9" type="jump" coverage="100%" />
+                <condition number="24" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="72" hits="1" branch="False" />
+            <line number="73" hits="1" branch="False" />
+            <line number="76" hits="1" branch="False" />
+            <line number="77" hits="1" branch="False" />
+            <line number="79" hits="1" branch="False" />
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="FinalAssignmentTest" line-rate="0.8723000000000001" branch-rate="1" complexity="15">
+      <classes>
+        <class name="AutoGeneratedProgram" filename=".nuget\packages\microsoft.net.test.sdk\17.8.0\build\netcoreapp3.1\Microsoft.NET.Test.Sdk.Program.cs" line-rate="0" branch-rate="1" complexity="1">
+          <methods>
+            <method name="Main" signature="(System.String[])" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="4" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="4" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="FinalAssignmentTest.Tests.Uppgift1.CalculatorTest" filename="source\repos\FinalAssignment\FinalAssignmentTest\Tests\Uppgift1\ClaculatorTest.cs" line-rate="0.8913" branch-rate="1" complexity="14">
+          <methods>
+            <method name="Setup" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="13" hits="9" branch="False" />
+                <line number="14" hits="9" branch="False" />
+                <line number="15" hits="9" branch="False" />
+              </lines>
+            </method>
+            <method name="AddFromInput_ValidNumbers_ReturnsCorrectSum" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="21" hits="1" branch="False" />
+                <line number="22" hits="1" branch="False" />
+                <line number="23" hits="1" branch="False" />
+              </lines>
+            </method>
+            <method name="AddFromInput_InvalidNumbers_ThrowsArgumentException" signature="()" line-rate="0.6666" branch-rate="1" complexity="1">
+              <lines>
+                <line number="28" hits="1" branch="False" />
+                <line number="29" hits="1" branch="False" />
+                <line number="30" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="AssertSum" signature="(System.String,System.String,System.Double)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="33" hits="1" branch="False" />
+                <line number="34" hits="1" branch="False" />
+                <line number="35" hits="1" branch="False" />
+                <line number="36" hits="1" branch="False" />
+              </lines>
+            </method>
+            <method name="DivideFromInput_ValidNumbers_ReturnsCorrectQuotient" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="44" hits="1" branch="False" />
+                <line number="45" hits="1" branch="False" />
+                <line number="46" hits="1" branch="False" />
+              </lines>
+            </method>
+            <method name="DivideFromInput_InvalidNumbers_ThrowsArgumentException" signature="()" line-rate="0.6666" branch-rate="1" complexity="1">
+              <lines>
+                <line number="51" hits="1" branch="False" />
+                <line number="52" hits="1" branch="False" />
+                <line number="53" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="DivideFromInput_DivideByZero_ThrowsArgumentException" signature="()" line-rate="0.6666" branch-rate="1" complexity="1">
+              <lines>
+                <line number="58" hits="1" branch="False" />
+                <line number="59" hits="1" branch="False" />
+                <line number="60" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="AssertQuotient" signature="(System.String,System.String,System.Double)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="63" hits="1" branch="False" />
+                <line number="64" hits="1" branch="False" />
+                <line number="65" hits="1" branch="False" />
+                <line number="66" hits="1" branch="False" />
+              </lines>
+            </method>
+            <method name="MultiplyFromInput_ValidNumbers_ReturnsCorrectProduct" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="74" hits="1" branch="False" />
+                <line number="75" hits="1" branch="False" />
+                <line number="76" hits="1" branch="False" />
+              </lines>
+            </method>
+            <method name="MultiplyFromInput_InvalidNumbers_ThrowsArgumentException" signature="()" line-rate="0.6666" branch-rate="1" complexity="1">
+              <lines>
+                <line number="81" hits="1" branch="False" />
+                <line number="82" hits="1" branch="False" />
+                <line number="83" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="AssertProduct" signature="(System.String,System.String,System.Double)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="86" hits="1" branch="False" />
+                <line number="87" hits="1" branch="False" />
+                <line number="88" hits="1" branch="False" />
+                <line number="89" hits="1" branch="False" />
+              </lines>
+            </method>
+            <method name="SubstractFromInput_ValidNumbers_ReturnsCorrectDifference" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="97" hits="1" branch="False" />
+                <line number="98" hits="1" branch="False" />
+                <line number="99" hits="1" branch="False" />
+              </lines>
+            </method>
+            <method name="SubstractFromInput_InvalidNumbers_ThrowsArgumentException" signature="()" line-rate="0.6666" branch-rate="1" complexity="1">
+              <lines>
+                <line number="104" hits="1" branch="False" />
+                <line number="105" hits="1" branch="False" />
+                <line number="106" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="AssertDifference" signature="(System.String,System.String,System.Double)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="109" hits="1" branch="False" />
+                <line number="110" hits="1" branch="False" />
+                <line number="111" hits="1" branch="False" />
+                <line number="112" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="13" hits="9" branch="False" />
+            <line number="14" hits="9" branch="False" />
+            <line number="15" hits="9" branch="False" />
+            <line number="21" hits="1" branch="False" />
+            <line number="22" hits="1" branch="False" />
+            <line number="23" hits="1" branch="False" />
+            <line number="28" hits="1" branch="False" />
+            <line number="29" hits="1" branch="False" />
+            <line number="30" hits="0" branch="False" />
+            <line number="33" hits="1" branch="False" />
+            <line number="34" hits="1" branch="False" />
+            <line number="35" hits="1" branch="False" />
+            <line number="36" hits="1" branch="False" />
+            <line number="44" hits="1" branch="False" />
+            <line number="45" hits="1" branch="False" />
+            <line number="46" hits="1" branch="False" />
+            <line number="51" hits="1" branch="False" />
+            <line number="52" hits="1" branch="False" />
+            <line number="53" hits="0" branch="False" />
+            <line number="58" hits="1" branch="False" />
+            <line number="59" hits="1" branch="False" />
+            <line number="60" hits="0" branch="False" />
+            <line number="63" hits="1" branch="False" />
+            <line number="64" hits="1" branch="False" />
+            <line number="65" hits="1" branch="False" />
+            <line number="66" hits="1" branch="False" />
+            <line number="74" hits="1" branch="False" />
+            <line number="75" hits="1" branch="False" />
+            <line number="76" hits="1" branch="False" />
+            <line number="81" hits="1" branch="False" />
+            <line number="82" hits="1" branch="False" />
+            <line number="83" hits="0" branch="False" />
+            <line number="86" hits="1" branch="False" />
+            <line number="87" hits="1" branch="False" />
+            <line number="88" hits="1" branch="False" />
+            <line number="89" hits="1" branch="False" />
+            <line number="97" hits="1" branch="False" />
+            <line number="98" hits="1" branch="False" />
+            <line number="99" hits="1" branch="False" />
+            <line number="104" hits="1" branch="False" />
+            <line number="105" hits="1" branch="False" />
+            <line number="106" hits="0" branch="False" />
+            <line number="109" hits="1" branch="False" />
+            <line number="110" hits="1" branch="False" />
+            <line number="111" hits="1" branch="False" />
+            <line number="112" hits="1" branch="False" />
+          </lines>
+        </class>
+      </classes>
+    </package>
+  </packages>
+</coverage>
