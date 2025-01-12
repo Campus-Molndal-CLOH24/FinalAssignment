@@ -63,7 +63,14 @@ namespace FinalAssignment.UppgifterTDD.Uppgift1
         // SUBSTRACT – Dummy med return 0 för att faila testet
         public double SubstractFromInput(string inputA, string inputB)
         {
-            return 0;  // 
-        }
+            if (double.TryParse(inputA, out double a) && double.TryParse(inputB, out double b))
+            {
+                return a - b;  // Utför subtraktion om båda inmatningarna är giltiga tal
+            }
+            else
+            {
+                throw new ArgumentException("Ogiltig inmatning! Ange giltiga siffror.");
+            }
     }
+}
 }
