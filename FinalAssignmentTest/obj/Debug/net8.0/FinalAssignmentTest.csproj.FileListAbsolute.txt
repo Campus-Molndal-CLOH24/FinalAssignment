@@ -1,4 +1,10 @@
 C:\Users\maria\source\repos\FinalAssignment\FinalAssignmentTest\bin\Debug\net8.0\CoverletSourceRootsMapping_FinalAssignmentTest
+C:\Users\maria\source\repos\FinalAssignment\FinalAssignmentTest\obj\Debug\net8.0\FinalAssignmentTest.csproj.AssemblyReference.cache
+C:\Users\maria\source\repos\FinalAssignment\FinalAssignmentTest\obj\Debug\net8.0\FinalAssignmentTest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\maria\source\repos\FinalAssignment\FinalAssignmentTest\obj\Debug\net8.0\FinalAssignmentTest.AssemblyInfoInputs.cache
+C:\Users\maria\source\repos\FinalAssignment\FinalAssignmentTest\obj\Debug\net8.0\FinalAssignmentTest.AssemblyInfo.cs
+C:\Users\maria\source\repos\FinalAssignment\FinalAssignmentTest\obj\Debug\net8.0\FinalAssignmentTest.csproj.CoreCompileInputs.cache
+C:\Users\maria\source\repos\FinalAssignment\FinalAssignmentTest\obj\Debug\net8.0\FinalAssignmentTest.sourcelink.json
 C:\Users\maria\source\repos\FinalAssignment\FinalAssignmentTest\bin\Debug\net8.0\testhost.dll
 C:\Users\maria\source\repos\FinalAssignment\FinalAssignmentTest\bin\Debug\net8.0\FinalAssignment.deps.json
 C:\Users\maria\source\repos\FinalAssignment\FinalAssignmentTest\bin\Debug\net8.0\FinalAssignment.runtimeconfig.json
@@ -161,11 +167,6 @@ C:\Users\maria\source\repos\FinalAssignment\FinalAssignmentTest\bin\Debug\net8.0
 C:\Users\maria\source\repos\FinalAssignment\FinalAssignmentTest\bin\Debug\net8.0\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
 C:\Users\maria\source\repos\FinalAssignment\FinalAssignmentTest\bin\Debug\net8.0\FinalAssignment.pdb
 C:\Users\maria\source\repos\FinalAssignment\FinalAssignmentTest\bin\Debug\net8.0\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
-C:\Users\maria\source\repos\FinalAssignment\FinalAssignmentTest\obj\Debug\net8.0\FinalAssignmentTest.csproj.AssemblyReference.cache
-C:\Users\maria\source\repos\FinalAssignment\FinalAssignmentTest\obj\Debug\net8.0\FinalAssignmentTest.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\maria\source\repos\FinalAssignment\FinalAssignmentTest\obj\Debug\net8.0\FinalAssignmentTest.AssemblyInfoInputs.cache
-C:\Users\maria\source\repos\FinalAssignment\FinalAssignmentTest\obj\Debug\net8.0\FinalAssignmentTest.AssemblyInfo.cs
-C:\Users\maria\source\repos\FinalAssignment\FinalAssignmentTest\obj\Debug\net8.0\FinalAssignmentTest.csproj.CoreCompileInputs.cache
 C:\Users\maria\source\repos\FinalAssignment\FinalAssignmentTest\obj\Debug\net8.0\FinalAss.82B1459B.Up2Date
 C:\Users\maria\source\repos\FinalAssignment\FinalAssignmentTest\obj\Debug\net8.0\FinalAssignmentTest.dll
 C:\Users\maria\source\repos\FinalAssignment\FinalAssignmentTest\obj\Debug\net8.0\refint\FinalAssignmentTest.dll
