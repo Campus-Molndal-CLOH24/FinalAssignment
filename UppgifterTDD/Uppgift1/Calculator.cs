@@ -1,4 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Security.Cryptography.X509Certificates;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace FinalAssignment.UppgifterTDD.Uppgift1
 {
@@ -9,7 +14,20 @@ namespace FinalAssignment.UppgifterTDD.Uppgift1
         {
             if (double.TryParse(inputA, out double a) && double.TryParse(inputB, out double b))
             {
-                return a + b;
+                return a + b;  // Summera om båda inmatningarna är giltiga tal
+            }
+            else
+            {
+                throw new ArgumentException("Ogiltig inmatning! Ange giltiga siffror.");
+            }
+        }
+
+        // ADD WITH VALIDATION (TryParse)
+        public double AddFromInputWithValidation(string inputA, string inputB)
+        {
+            if (double.TryParse(inputA, out double a) && double.TryParse(inputB, out double b))
+            {
+                return a + b;  // Summera om båda inmatningarna är giltiga tal
             }
             else
             {
@@ -26,7 +44,7 @@ namespace FinalAssignment.UppgifterTDD.Uppgift1
                 {
                     throw new ArgumentException("Kan inte dela med noll.");
                 }
-                return a / b;
+                return a / b;  // Utför division om båda inmatningarna är giltiga tal
             }
             else
             {
@@ -39,7 +57,7 @@ namespace FinalAssignment.UppgifterTDD.Uppgift1
         {
             if (double.TryParse(inputA, out double a) && double.TryParse(inputB, out double b))
             {
-                return a * b;
+                return a * b;  // Utför multiplikation om båda inmatningarna är giltiga tal
             }
             else
             {
@@ -52,7 +70,7 @@ namespace FinalAssignment.UppgifterTDD.Uppgift1
         {
             if (double.TryParse(inputA, out double a) && double.TryParse(inputB, out double b))
             {
-                return a - b;
+                return a - b;  // Utför subtraktion om båda inmatningarna är giltiga tal
             }
             else
             {
@@ -61,4 +79,20 @@ namespace FinalAssignment.UppgifterTDD.Uppgift1
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
