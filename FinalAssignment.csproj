@@ -12,4 +12,8 @@
     <PackageReference Include="MSTest.TestFramework" Version="3.7.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="UppgifterTDD\Uppgift2\" />
+  </ItemGroup>
+
 </Project>
