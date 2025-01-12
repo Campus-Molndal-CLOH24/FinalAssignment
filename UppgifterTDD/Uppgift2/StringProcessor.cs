@@ -37,8 +37,8 @@ namespace FinalAssignment.UppgifterTDD.Uppgift2
     
 }        public string ToLowerCase(string input)
     {
-        return input;
-    }
+        return input == null ? string.Empty : input.ToLower(); //returnerar strängen i små bokstäver
+        }
 }
 }
         
