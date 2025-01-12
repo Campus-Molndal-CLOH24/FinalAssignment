@@ -9,7 +9,7 @@
  2. Act: Anropa metoden som ska testas
  3. Assert: Kontrollera att resultatet stämmer överens med det resultat som förväntas.
 
- ## Uppgift 1- Calculator 
+ ### Uppgift 1- Calculator 
 
 Det här projektet är en enkel applikation som hanterar fyra grundläggande räknesätt: **addition**, **subtraktion**, **multiplikation** och **division**. Projektet följer **Test Driven Development (TDD)**, 
 där metoder först testas med olika typer av indata och sedan implementeras för att få testerna att passera.
@@ -49,8 +49,13 @@ public double DivideFromInput(string inputA, string inputB)
     {
         throw new ArgumentException("Ogiltig inmatning! Ange giltiga siffror.");  // Kasta undantag för ogiltig inmatning
     }
-} 
+}
 ```
+### Refaktorisera 
+Efter att jag blev klar så skulle jag försöka refaktorisera, dels genom att skapa separata klasser för varje räknesätt. Tyvärr så fanns bara valet "create base class", vilket inte var vad jag hoppats/trott på. Frågade ChatGtp om det var enklast att bara skapa klasserna, kopiera koden och klistra in den, svaret blev ja. Skulle tydligen inte frågat, eftersom allt blev fel.
+Minst 17 fel dök upp efter att jag flyttat add, blev 35 efter jag flyttat divide. Tog mig 1,5 h att få till det tillbaka igen. På det så saknades hela FinalAssignmentTest på Git, det tog 1,5 att fixa. 
+Så mina planer på att refaktorisera gick inte som jag ville, och då bad jag helt enkelt ChatGtp att snygga till testklassen och Calculator åt mig, för jag mäktade inte med mer fel. 
+
 
 ## Uppgift 2 - Stränghantering 
 
