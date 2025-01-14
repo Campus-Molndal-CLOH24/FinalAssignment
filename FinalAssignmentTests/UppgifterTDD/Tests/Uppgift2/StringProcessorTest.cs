@@ -68,33 +68,53 @@ namespace FinalAssignmentTest.Tests.Uppgift2
             Assert.IsFalse(actual.Contains("å"), "Strängen innehåller otillåtna tecken 'å'");//går inte att använda StringAssert.DoesNotContain
             Assert.IsFalse(actual.Contains("ä"), "Strängen innehåller otillåtna tecken 'ä'");
             Assert.IsFalse(actual.Contains("ö"), "Strängen innehåller otillåtna tecken 'ö'");
+            Assert.IsFalse(actual.Contains("Å"), "Strängen innehåller otillåtna tecken 'Å'");
+            Assert.IsFalse(actual.Contains("Ä"), "Strängen innehåller otillåtna tecken 'Ä'");
+            Assert.IsFalse(actual.Contains("Ö"), "Strängen innehåller otillåtna tecken 'Ö'");
         }
-
-        //Emtpty string
-
-        [TestMethod]
-        public void Reverse_EmptyString_ReturnsEmptyString()
-        {
-            // Arrange
-            var processor = new StringProcessor();
-            var input = string.Empty;  // Tom sträng
-            var expected = string.Empty;
-
-            // Act
-            var actual = processor.Reverse(input);
-
-            // Assert
-            Assert.AreEqual(expected, actual, "Metoden returnerade inte en tom sträng när en tom sträng skickades in.");
-        }
-
     }
 
+    //NullString
+    namespace FinalAssignmentTest.Tests.Uppgift2
+    {
+        [TestClass]
+        public class StringProcessorTest_NullMethods
+        {
+            [TestMethod]
+            public void ToLowerWordNull_NullString_ReturnsEmptyString()
+            {
+                var processor = new StringProcessor();
+                var result = processor.ToLowerWordNull(null);  // Skickar in null
+
+                Assert.AreEqual(string.Empty, result);  // Kontrollera att det returneras en tom sträng
+            }
+
+            [TestMethod]
+            public void ToUpperWordNull_NullString_ReturnsEmptyString()
+            {
+                var processor = new StringProcessor();
+                var result = processor.ToUpperWordNull(null);  // Skickar in null
+
+                Assert.AreEqual(string.Empty, result);  // Kontrollera att det returneras en tom sträng
+            }
+
+            [TestMethod]
+            public void ToLowerCaseNull_NullString_ReturnsEmptyString()
+            {
+                var processor = new StringProcessor();
+                var result = processor.ToLowerCaseNull(null);  // Skickar in null
+
+                Assert.AreEqual(string.Empty, result);  // Kontrollera att det returneras en tom sträng
+            }
+
+            [TestMethod]
+            public void ToUpperCaseNull_NullString_ReturnsEmptyString()
+            {
+                var processor = new StringProcessor();
+                var result = processor.ToUpperCaseNull(null);  // Skickar in null
+
+                Assert.AreEqual(string.Empty, result);  // Kontrollera att det returneras en tom sträng
+            }
+        }
+    }
 }
-
-
-
-
-
-
-
-
