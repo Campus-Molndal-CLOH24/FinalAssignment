@@ -43,12 +43,12 @@ namespace FinalAssignment.UppgifterTDD.Uppgift2
         // RemoveSwedishCharacters
         public string OnlyEnglsihLetters(string input)
         {
-            return input; 
+            return input.Replace("å", "a").Replace("ä", "a").Replace("ö", "o").Replace("Å", "A").Replace("Ä", "A").Replace("Ö", "O");
 
 
-    }
+        }
 }
 }
 
 
-
+ 

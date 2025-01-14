@@ -62,7 +62,7 @@ namespace FinalAssignmentTest.Tests.Uppgift2
             var input = "Hejåäö";  // Sträng att testa
 
             // Act
-            var actual = processor.OnlyEnglsihLetters(input);  // Kör metoden med input
+            var actual = processor.OnlyEnglsihLetters(input);  // Nästa steg implementera så att testet går igenom, steg 3 refaktorisera 
 
             // Assert
             Assert.IsFalse(actual.Contains("å"), "Strängen innehåller otillåtna tecken 'å'");//går inte att använda StringAssert.DoesNotContain

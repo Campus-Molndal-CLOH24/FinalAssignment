@@ -1,0 +1,10 @@
+# Ignorera Visual Studio-mappen
+.vs/
+
+# Ignorera temporära filer
+*.user
+*.suo
+
+# Ignorera bin- och obj-mappar
+bin/
+obj/
