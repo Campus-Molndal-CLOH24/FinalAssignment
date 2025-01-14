@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FinalAssignment.UppgifterTDD.Uppgift2;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -44,11 +45,38 @@ namespace FinalAssignment.UppgifterTDD.Uppgift2
         public string OnlyEnglsihLetters(string input)
         {
             return input.Replace("å", "a").Replace("ä", "a").Replace("ö", "o").Replace("Å", "A").Replace("Ä", "A").Replace("Ö", "O");
-
-
         }
-}
+
+    }
 }
 
 
- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

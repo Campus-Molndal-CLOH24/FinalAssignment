@@ -70,7 +70,31 @@ namespace FinalAssignmentTest.Tests.Uppgift2
             Assert.IsFalse(actual.Contains("ö"), "Strängen innehåller otillåtna tecken 'ö'");
         }
 
+        //Emtpty string
+
+        [TestMethod]
+        public void Reverse_EmptyString_ReturnsEmptyString()
+        {
+            // Arrange
+            var processor = new StringProcessor();
+            var input = string.Empty;  // Tom sträng
+            var expected = string.Empty;
+
+            // Act
+            var actual = processor.Reverse(input);
+
+            // Assert
+            Assert.AreEqual(expected, actual, "Metoden returnerade inte en tom sträng när en tom sträng skickades in.");
+        }
+
     }
+
 }
+
+
+
+
+
+
 
 
