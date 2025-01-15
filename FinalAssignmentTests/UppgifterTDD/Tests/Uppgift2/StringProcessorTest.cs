@@ -116,5 +116,10 @@ namespace FinalAssignmentTest.Tests.Uppgift2
                 Assert.AreEqual(string.Empty, result);  // Kontrollera att det returneras en tom sträng
             }
         }
+
+            //NYA TESTER 
+
+
+
     }
 }

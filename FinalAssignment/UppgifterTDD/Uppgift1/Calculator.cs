@@ -22,7 +22,7 @@ namespace FinalAssignment.UppgifterTDD.Uppgift1
             }
         }
 
-        // ADD WITH VALIDATION (TryParse)
+
         public double AddFromInputWithValidation(string inputA, string inputB)
         {
             if (double.TryParse(inputA, out double a) && double.TryParse(inputB, out double b))
@@ -34,6 +34,21 @@ namespace FinalAssignment.UppgifterTDD.Uppgift1
                 throw new ArgumentException("Ogiltig inmatning! Ange giltiga siffror.");
             }
         }
+        public double AddNegativePositive(string inputA, string inputB)
+        {
+            if (double.TryParse(inputA, out double a) && double.TryParse(inputB, out double b))
+            {
+                return a + b;  // Summerar även om inputA är negativt och inputB är positivt
+            }
+            else
+            {
+                throw new ArgumentException("Ogiltig inmatning! Ange giltiga siffror.");
+            }
+        }
+
+
+
+
 
         // DIVIDE
         public double DivideFromInput(string inputA, string inputB)
@@ -79,6 +94,26 @@ namespace FinalAssignment.UppgifterTDD.Uppgift1
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

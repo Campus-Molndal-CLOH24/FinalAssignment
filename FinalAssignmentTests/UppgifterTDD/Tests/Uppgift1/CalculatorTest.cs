@@ -35,6 +35,26 @@ namespace FinalAssignmentTest.Tests.Uppgift1
             Assert.AreEqual(expectedSum, actualSum);
         }
 
+        //NEW TESTS FOR ADDITION
+
+        [TestMethod]
+        public void AddNegativePositive()
+        {
+            // Arrange
+            var inputA = "-4";
+            var inputB = "5";
+            var expectedSum = 1.0;
+
+            // Act
+            var actualSum = _calculator.AddNegativePositive(inputA, inputB);
+
+            // Assert
+            Assert.AreEqual(expectedSum, actualSum);
+        }
+
+
+
+
         #endregion
 
         #region DIVISION TESTS
@@ -110,7 +130,27 @@ namespace FinalAssignmentTest.Tests.Uppgift1
             var actualDifference = _calculator.SubstractFromInput(inputA, inputB);
             Assert.AreEqual(expectedDifference, actualDifference);
         }
-
-        #endregion
     }
 }
+
+
+#endregion
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
