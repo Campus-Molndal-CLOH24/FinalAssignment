@@ -85,6 +85,21 @@ namespace FinalAssignmentTest.Tests.Uppgift1
             Assert.AreEqual(expectedQuotient, actualQuotient);
         }
 
+        [TestMethod]
+        public void DivideNegativePositive()
+        {
+            // Arrange
+            var inputA = "-10";
+            var inputB = "2";
+            var expectedQuotient = -5.0;
+
+            // Act
+            var actualQuotient = _calculator.DivideFromInput(inputA, inputB);
+
+            // Assert
+            Assert.AreEqual(expectedQuotient, actualQuotient);
+        }
+
         #endregion
 
         #region MULTIPLICATION TESTS

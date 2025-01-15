@@ -34,7 +34,7 @@ namespace FinalAssignment.UppgifterTDD.Uppgift1
                 throw new ArgumentException("Ogiltig inmatning! Ange giltiga siffror.");
             }
         }
-        public double AddNegativePositive(string inputA, string inputB)
+         public double AddNegativePositive(string inputA, string inputB)
         {
             if (double.TryParse(inputA, out double a) && double.TryParse(inputB, out double b))
             {
