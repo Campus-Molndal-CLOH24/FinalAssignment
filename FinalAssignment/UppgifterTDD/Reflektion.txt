@@ -1,0 +1,31 @@
+﻿# Reflektion över projektet
+
+
+Jag hade verkligen sett fram emot det här arbetet, detta då jag någonstans har känt att det här är lite "jag".
+Dessvärre så ville det sig inte riktigt som jag hade tänkt mig. Jag hade hoppats på att få en bättre start på projekt, att jag inte missat så mycket som
+jag gjorde på den här kursen. Jag hade hoppats på att jag skulle ha en bättre förståelse för hur jag skulle kunna använda mig av de olika verktygen som jag har lärt mig.
+
+Min plan var given att jag skulle försöka klara av alla uppgifterna, men starten för projektet, och första halvan blev inte riktigt som jag hade tänkt mig.
+
+Jag hade oturen att få knas med det mesta, och det tog mig en hel del tid att lösa det. Jag hade delvis problem med;
+
+-  Att kunna starta ett repository på GitHub, via VS.
+-  Att kunna starta ett repsitory på GitHub, via GitHub/öppna ett repository skapat på GitHub "via open with VS".
+-  Att kunna pusha upp filer till GitHu
+-  Att kunna pulla ner filer från GitHub.
+-  Meta Data fel, som jag inte riktigt förstod mig på.
+-  Hälften av testerna gick inte över till GitHub, och jag vet inte varför.
+-  Jag hade problem med att få till en bra struktur på mina filer.
+-  Jag fick installera om VS.
+-  Jag gjorde totalt 5 försök genom att skapa nya repositories m.m.
+-  Jag jade 2 main i VS utöver den "riktiga" mainen",men bara en på GitHub.
+
+
+Det var som sagt en hel del som inte ville som jag ville. Men jag gav inte upp, jag kämpade på, och jag lyckades tillslut få två testklasser som jag är nöjd med. 
+
+Uppgiften i sig var rolig, givande och jag har lärt mig väldigt mycket, även om det finns mer att lära sig. 
+
+Ska jag vara besviken över något så är det väl att jag inte lyckas ta mig tid att göra uppgifterna för VG. Jag hade verkligen velat göra det, men ibland så räcker inte tiden till av olika anledningar.
+Mycket av det jag gjort har jag tänkt mig fram till, exempevis att jag skulle använda mig av double och try.parse, samma gäller för stringprocess. 
+Det finns givetvis så många fler sätt att göra tester på, men det är inget som säger att jag inte kommer att göra det i framtiden, jag har i alla fall en bra bas känner jag!
+
