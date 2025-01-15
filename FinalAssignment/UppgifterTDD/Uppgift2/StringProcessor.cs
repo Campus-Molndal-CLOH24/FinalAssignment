@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,7 +11,7 @@ namespace FinalAssignment.UppgifterTDD.Uppgift2
         #region STRING PROCESSING METHODS
 
         // Reverse a string
-        public string Reverse(string input)
+        public string Reverse(string? input)
         {
             if (input == null)
                 return string.Empty;  // Returnerar tom sträng om input är null
@@ -23,25 +22,25 @@ namespace FinalAssignment.UppgifterTDD.Uppgift2
         }
 
         // Convert string to lowercase
-        public string ToLowerWord(string input)
+        public string ToLowerWord(string? input)
         {
             return input == null ? string.Empty : input.ToLower();  // Returnerar hela ordet i små bokstäver
         }
 
         // Convert string to uppercase
-        public string ToUpperWord(string input)
+        public string ToUpperWord(string? input)
         {
             return input == null ? string.Empty : input.ToUpper();  // Returnerar hela ordet i stora bokstäver
         }
 
         // Convert first letter to lowercase
-        public string ToLowerCase(string input)
+        public string ToLowerCase(string? input)
         {
             return input == null ? string.Empty : input.ToLower();  // Returnerar hela strängen i små bokstäver
         }
 
         // Remove Swedish characters from string
-        public string OnlyEnglsihLetters(string input)
+        public string OnlyEnglsihLetters(string? input)
         {
             if (input == null)
                 return string.Empty;  // Returnerar tom sträng om input är null
@@ -60,7 +59,7 @@ namespace FinalAssignment.UppgifterTDD.Uppgift2
         #region NULL HANDLING METHODS
 
         // Handle null for lowercase conversion
-        public string ToLowerWordNull(string input)
+        public string ToLowerWordNull(string? input)
         {
             if (input == null)
                 return string.Empty;  // Returnerar tom sträng istället för att kasta undantag
@@ -68,7 +67,7 @@ namespace FinalAssignment.UppgifterTDD.Uppgift2
         }
 
         // Handle null for uppercase conversion
-        public string ToUpperWordNull(string input)
+        public string ToUpperWordNull(string? input)
         {
             if (input == null)
                 return string.Empty;  // Returnerar tom sträng istället för att kasta undantag
@@ -76,7 +75,7 @@ namespace FinalAssignment.UppgifterTDD.Uppgift2
         }
 
         // Handle null and empty input for first letter lowercase conversion
-        public string ToLowerCaseNull(string input)
+        public string ToLowerCaseNull(string? input)
         {
             if (input == null || input.Length == 0)
                 return string.Empty;  // Returnerar tom sträng om input är null eller tom
@@ -84,7 +83,7 @@ namespace FinalAssignment.UppgifterTDD.Uppgift2
         }
 
         // Handle null and empty input for first letter uppercase conversion
-        public string ToUpperCaseNull(string input)
+        public string ToUpperCaseNull(string? input)
         {
             if (input == null || input.Length == 0)
                 return string.Empty;  // Returnerar tom sträng om input är null eller tom
@@ -94,6 +93,7 @@ namespace FinalAssignment.UppgifterTDD.Uppgift2
         #endregion
     }
 }
+
 
 
 

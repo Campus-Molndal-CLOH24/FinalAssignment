@@ -27,12 +27,13 @@ namespace FinalAssignmentTest.Tests.Uppgift1
         [ExpectedException(typeof(ArgumentException))]
         public void AddFromInput_InvalidNumbers_ThrowsArgumentException()
         {
-            _calculator.AddFromInputWithValidation("abc", "5.5");
+            _calculator!.AddFromInputWithValidation("abc", "5.5");
+
         }
 
         private void AssertSum(string inputA, string inputB, double expectedSum)
         {
-            var actualSum = _calculator.AddFromInput(inputA, inputB);
+            var actualSum = _calculator!.AddFromInput(inputA, inputB);
             Assert.AreEqual(expectedSum, actualSum);
         }
 
@@ -47,7 +48,7 @@ namespace FinalAssignmentTest.Tests.Uppgift1
             var expectedSum = 1.0;
 
             // Act
-            var actualSum = _calculator.AddNegativePositive(inputA, inputB);
+            var actualSum = _calculator!.AddNegativePositive(inputA, inputB);
 
             // Assert
             Assert.AreEqual(expectedSum, actualSum);
@@ -70,19 +71,19 @@ namespace FinalAssignmentTest.Tests.Uppgift1
         [ExpectedException(typeof(ArgumentException))]
         public void DivideFromInput_InvalidNumbers_ThrowsArgumentException()
         {
-            _calculator.DivideFromInput("abc", "5.5");
+            _calculator!.DivideFromInput("abc", "5.5");
         }
 
         [TestMethod]
         [ExpectedException(typeof(ArgumentException))]
         public void DivideFromInput_DivideByZero_ThrowsArgumentException()
         {
-            _calculator.DivideFromInput("10", "0");
+            _calculator!.DivideFromInput("10", "0");
         }
 
         private void AssertQuotient(string inputA, string inputB, double expectedQuotient)
         {
-            var actualQuotient = _calculator.DivideFromInput(inputA, inputB);
+            var actualQuotient = _calculator!.DivideFromInput(inputA, inputB);
             Assert.AreEqual(expectedQuotient, actualQuotient);
         }
 
@@ -95,7 +96,7 @@ namespace FinalAssignmentTest.Tests.Uppgift1
             var expectedQuotient = -5.0;
 
             // Act
-            var actualQuotient = _calculator.DivideFromInput(inputA, inputB);
+            var actualQuotient = _calculator!.DivideFromInput(inputA, inputB);
 
             // Assert
             Assert.AreEqual(expectedQuotient, actualQuotient);
@@ -115,12 +116,12 @@ namespace FinalAssignmentTest.Tests.Uppgift1
         [ExpectedException(typeof(ArgumentException))]
         public void MultiplyFromInput_InvalidNumbers_ThrowsArgumentException()
         {
-            _calculator.MultiplyFromInput("abc", "5.5");
+            _calculator!.MultiplyFromInput("abc", "5.5");
         }
 
         private void AssertProduct(string inputA, string inputB, double expectedProduct)
         {
-            var actualProduct = _calculator.MultiplyFromInput(inputA, inputB);
+            var actualProduct = _calculator!.MultiplyFromInput(inputA, inputB);
             Assert.AreEqual(expectedProduct, actualProduct);
         }
 
@@ -138,12 +139,12 @@ namespace FinalAssignmentTest.Tests.Uppgift1
         [ExpectedException(typeof(ArgumentException))]
         public void SubstractFromInput_InvalidNumbers_ThrowsArgumentException()
         {
-            _calculator.SubstractFromInput("abc", "5");
+            _calculator!.SubstractFromInput("abc", "5");
         }
 
         private void AssertDifference(string inputA, string inputB, double expectedDifference)
         {
-            var actualDifference = _calculator.SubstractFromInput(inputA, inputB);
+            var actualDifference = _calculator!.SubstractFromInput(inputA, inputB);
             Assert.AreEqual(expectedDifference, actualDifference);
         }
     }
