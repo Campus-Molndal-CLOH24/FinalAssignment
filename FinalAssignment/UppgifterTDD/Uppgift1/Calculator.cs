@@ -116,6 +116,19 @@ namespace FinalAssignment.UppgifterTDD.Uppgift1
             }
         }
 
+        public double SubstractNegativePositive(string inputA, string inputB)
+        {
+            if (double.TryParse(inputA, out double a) && double.TryParse(inputB, out double b))
+            {
+                return a - b;  // Utför subtraktion även om inputA är negativt och inputB är positivt
+            }
+            else
+            {
+                throw new ArgumentException("Ogiltig inmatning! Ange giltiga siffror.");
+            }
+
+        }
+
         #endregion
     }
 }

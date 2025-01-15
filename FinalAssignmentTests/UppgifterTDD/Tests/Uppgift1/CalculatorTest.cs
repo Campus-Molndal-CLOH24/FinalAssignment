@@ -162,6 +162,20 @@ namespace FinalAssignmentTest.Tests.Uppgift1
             var actualDifference = _calculator!.SubstractFromInput(inputA, inputB);
             Assert.AreEqual(expectedDifference, actualDifference);
         }
+        [TestMethod]
+        public void SubstractNegativePositive()
+        {
+            // Arrange
+            var inputA = "-10";
+            var inputB = "2";
+            var expectedDifference = -12.0;
+
+            // Act
+            var actualDifference = _calculator!.SubstractNegativePositive(inputA, inputB);
+
+            // Assert
+            Assert.AreEqual(expectedDifference, actualDifference);
+        }
     }
 }
 
