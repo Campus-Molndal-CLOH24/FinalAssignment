@@ -1,125 +1,95 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using FinalAssignment.UppgifterTDD.Uppgift2;  // Referens till klassen med metoden som ska testas
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace FinalAssignmentTest.Tests.Uppgift2
+namespace FinalAssignment.UppgifterTDD.Uppgift2
 {
-    [TestClass]
-    public class StringProcessorTest
+    public class StringProcessor
     {
-        [TestMethod]
-        public void Reverse_ValidString_ReturnsReversedString()
+        #region STRING PROCESSING METHODS
+
+        // Reverse a string
+        public string Reverse(string input)
         {
-            // Arrange
-            var processor = new StringProcessor();  // Skapar en instans av klassen vi testar
-            var input = "StringTest";               // Sträng att testa
-            var expected = "tseTgnirtS";             // Förväntat resultat (omvänd sträng)
+            if (input == null)
+                return string.Empty;  // Returnerar tom sträng om input är null
 
-            // Act
-            var actual = processor.Reverse(input);  // Kör metoden med input
-
-            // Assert
-            Assert.AreEqual(expected, actual);//"Testet misslyckas eftersom Reverse-metoden inte fungerar som förväntat.");
-        }
-        // ToLower 
-        
-
-        [TestMethod]
-        public void ToLowerWord_ValidString_ReturnsLowercaseString()
-        {
-            // Arrange
-            var processor = new StringProcessor();  // Skapar en instans av klassen vi testar
-            var input = "StringTest";               // Sträng att testa
-            var expected = "stringtest";             // Förväntat resultat (omvänd sträng)
-
-            // Act
-            var actual = processor.ToLowerWord(input);  // Kör metoden med input
-
-            // Assert
-            Assert.AreEqual(expected, actual);//"Testet misslyckas eftersom ToLower-metoden inte fungerar som förväntat.");
-        
-    }       //ToUpper
-         [TestMethod]
-    public void ToUpperWord_ValidString_ReturnsUppercaseString()
-    {
-        // Arrange
-        var processor = new StringProcessor();  // Skapar en instans av klassen vi testar
-        var input = "StringTest";               // Sträng att testa
-        var expected = "STRINGTEST";             // Förväntat resultat (omvänd sträng)
-
-        // Act
-        var actual = processor.ToUpperWord(input);  // Kör metoden med input
-
-        // Assert
-        Assert.AreEqual(expected, actual);//"Testet misslyckas eftersom ToUpper-metoden inte fungerar som förväntat.");
-    }
-        //RemoveSwedishCharacters
-
-        [TestMethod]
-        public void RemoveSwedishCharacters()
-        {
-            // Arrange
-            var processor = new StringProcessor();  // Skapar en instans av klassen vi testar
-            var input = "Hejåäö";  // Sträng att testa
-
-            // Act
-            var actual = processor.OnlyEnglsihLetters(input);  // Nästa steg implementera så att testet går igenom, steg 3 refaktorisera 
-
-            // Assert
-            Assert.IsFalse(actual.Contains("å"), "Strängen innehåller otillåtna tecken 'å'");//går inte att använda StringAssert.DoesNotContain
-            Assert.IsFalse(actual.Contains("ä"), "Strängen innehåller otillåtna tecken 'ä'");
-            Assert.IsFalse(actual.Contains("ö"), "Strängen innehåller otillåtna tecken 'ö'");
-            Assert.IsFalse(actual.Contains("Å"), "Strängen innehåller otillåtna tecken 'Å'");
-            Assert.IsFalse(actual.Contains("Ä"), "Strängen innehåller otillåtna tecken 'Ä'");
-            Assert.IsFalse(actual.Contains("Ö"), "Strängen innehåller otillåtna tecken 'Ö'");
-        }
-    }
-
-    //NullString
-    namespace FinalAssignmentTest.Tests.Uppgift2
-    {
-        [TestClass]
-        public class StringProcessorTest_NullMethods
-        {
-            [TestMethod]
-            public void ToLowerWordNull_NullString_ReturnsEmptyString()
-            {
-                var processor = new StringProcessor();
-                var result = processor.ToLowerWordNull(null);  // Skickar in null
-
-                Assert.AreEqual(string.Empty, result);  // Kontrollera att det returneras en tom sträng
-            }
-
-            [TestMethod]
-            public void ToUpperWordNull_NullString_ReturnsEmptyString()
-            {
-                var processor = new StringProcessor();
-                var result = processor.ToUpperWordNull(null);  // Skickar in null
-
-                Assert.AreEqual(string.Empty, result);  // Kontrollera att det returneras en tom sträng
-            }
-
-            [TestMethod]
-            public void ToLowerCaseNull_NullString_ReturnsEmptyString()
-            {
-                var processor = new StringProcessor();
-                var result = processor.ToLowerCaseNull(null);  // Skickar in null
-
-                Assert.AreEqual(string.Empty, result);  // Kontrollera att det returneras en tom sträng
-            }
-
-            [TestMethod]
-            public void ToUpperCaseNull_NullString_ReturnsEmptyString()
-            {
-                var processor = new StringProcessor();
-                var result = processor.ToUpperCaseNull(null);  // Skickar in null
-
-                Assert.AreEqual(string.Empty, result);  // Kontrollera att det returneras en tom sträng
-            }
+            char[] charArray = input.ToCharArray();
+            Array.Reverse(charArray);
+            return new string(charArray);
         }
 
-            //NYA TESTER 
+        // Convert string to lowercase
+        public string ToLowerWord(string input)
+        {
+            return input == null ? string.Empty : input.ToLower();  // Returnerar hela ordet i små bokstäver
+        }
 
+        // Convert string to uppercase
+        public string ToUpperWord(string input)
+        {
+            return input == null ? string.Empty : input.ToUpper();  // Returnerar hela ordet i stora bokstäver
+        }
 
+        // Convert first letter to lowercase
+        public string ToLowerCase(string input)
+        {
+            return input == null ? string.Empty : input.ToLower();  // Returnerar hela strängen i små bokstäver
+        }
 
+        // Remove Swedish characters from string
+        public string OnlyEnglsihLetters(string input)
+        {
+            if (input == null)
+                return string.Empty;  // Returnerar tom sträng om input är null
+            return input.Replace("å", "a").Replace("ä", "a").Replace("ö", "o")
+                        .Replace("Å", "A").Replace("Ä", "A").Replace("Ö", "O");
+        }
+
+        // Placeholder for ToUpperCase (throws exception)
+        public void ToUpperCase(object value)
+        {
+            throw new NotImplementedException();
+        }
+
+        #endregion
+
+        #region NULL HANDLING METHODS
+
+        // Handle null for lowercase conversion
+        public string ToLowerWordNull(string input)
+        {
+            if (input == null)
+                return string.Empty;  // Returnerar tom sträng istället för att kasta undantag
+            return input.ToLower();
+        }
+
+        // Handle null for uppercase conversion
+        public string ToUpperWordNull(string input)
+        {
+            if (input == null)
+                return string.Empty;  // Returnerar tom sträng istället för att kasta undantag
+            return input.ToUpper();
+        }
+
+        // Handle null and empty input for first letter lowercase conversion
+        public string ToLowerCaseNull(string input)
+        {
+            if (input == null || input.Length == 0)
+                return string.Empty;  // Returnerar tom sträng om input är null eller tom
+            return char.ToLower(input[0]) + (input.Length > 1 ? input.Substring(1) : string.Empty);
+        }
+
+        // Handle null and empty input for first letter uppercase conversion
+        public string ToUpperCaseNull(string input)
+        {
+            if (input == null || input.Length == 0)
+                return string.Empty;  // Returnerar tom sträng om input är null eller tom
+            return char.ToUpper(input[0]) + (input.Length > 1 ? input.Substring(1) : string.Empty);
+        }
+
+        #endregion
     }
 }
