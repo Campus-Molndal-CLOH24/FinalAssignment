@@ -10,7 +10,7 @@ namespace FinalAssignment.UppgifterTDD.Uppgift1
     {
         #region ADDITION METHODS
 
-        // ADD
+        
         public double AddFromInput(string inputA, string inputB)
         {
             if (double.TryParse(inputA, out double a) && double.TryParse(inputB, out double b))
@@ -23,7 +23,7 @@ namespace FinalAssignment.UppgifterTDD.Uppgift1
             }
         }
 
-        // ADD with validation
+        
         public double AddFromInputWithValidation(string inputA, string inputB)
         {
             if (double.TryParse(inputA, out double a) && double.TryParse(inputB, out double b))
@@ -36,7 +36,7 @@ namespace FinalAssignment.UppgifterTDD.Uppgift1
             }
         }
 
-        // ADD for Negative and Positive Numbers
+        
         public double AddNegativePositive(string inputA, string inputB)
         {
             if (double.TryParse(inputA, out double a) && double.TryParse(inputB, out double b))
@@ -53,7 +53,7 @@ namespace FinalAssignment.UppgifterTDD.Uppgift1
 
         #region DIVISION METHODS
 
-        // DIVIDE
+       
         public double DivideFromInput(string inputA, string inputB)
         {
             if (double.TryParse(inputA, out double a) && double.TryParse(inputB, out double b))
@@ -74,7 +74,7 @@ namespace FinalAssignment.UppgifterTDD.Uppgift1
 
         #region MULTIPLICATION METHODS
 
-        // MULTIPLY
+        
         public double MultiplyFromInput(string inputA, string inputB)
         {
             if (double.TryParse(inputA, out double a) && double.TryParse(inputB, out double b))
@@ -87,11 +87,23 @@ namespace FinalAssignment.UppgifterTDD.Uppgift1
             }
         }
 
+        public double MultiplyNegativePositive(string inputA, string inputB)
+        {
+            if (double.TryParse(inputA, out double a) && double.TryParse(inputB, out double b))
+            {
+                return a * b;  // Utför multiplikation även om inputA är negativt och inputB är positivt
+            }
+            else
+            {
+                throw new ArgumentException("Ogiltig inmatning! Ange giltiga siffror.");
+            }
+        }
+
         #endregion
 
         #region SUBTRACTION METHODS
 
-        // SUBTRACT
+
         public double SubstractFromInput(string inputA, string inputB)
         {
             if (double.TryParse(inputA, out double a) && double.TryParse(inputB, out double b))

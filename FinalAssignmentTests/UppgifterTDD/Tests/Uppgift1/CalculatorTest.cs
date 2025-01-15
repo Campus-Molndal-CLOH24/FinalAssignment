@@ -125,6 +125,21 @@ namespace FinalAssignmentTest.Tests.Uppgift1
             Assert.AreEqual(expectedProduct, actualProduct);
         }
 
+        [TestMethod]
+        public void MultiplyNegativePositive()
+        {
+            // Arrange
+            var inputA = "-4";
+            var inputB = "5";
+            var expectedProduct = -20.0;
+
+            // Act
+            var actualProduct = _calculator!.MultiplyNegativePositive(inputA, inputB);
+
+            // Assert
+            Assert.AreEqual(expectedProduct, actualProduct);
+        }
+
         #endregion
 
         #region SUBTRACTION TESTS
