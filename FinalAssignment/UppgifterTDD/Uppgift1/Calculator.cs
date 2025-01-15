@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -9,6 +8,8 @@ namespace FinalAssignment.UppgifterTDD.Uppgift1
 {
     public class Calculator
     {
+        #region ADDITION METHODS
+
         // ADD
         public double AddFromInput(string inputA, string inputB)
         {
@@ -22,7 +23,7 @@ namespace FinalAssignment.UppgifterTDD.Uppgift1
             }
         }
 
-
+        // ADD with validation
         public double AddFromInputWithValidation(string inputA, string inputB)
         {
             if (double.TryParse(inputA, out double a) && double.TryParse(inputB, out double b))
@@ -34,7 +35,9 @@ namespace FinalAssignment.UppgifterTDD.Uppgift1
                 throw new ArgumentException("Ogiltig inmatning! Ange giltiga siffror.");
             }
         }
-         public double AddNegativePositive(string inputA, string inputB)
+
+        // ADD for Negative and Positive Numbers
+        public double AddNegativePositive(string inputA, string inputB)
         {
             if (double.TryParse(inputA, out double a) && double.TryParse(inputB, out double b))
             {
@@ -46,9 +49,9 @@ namespace FinalAssignment.UppgifterTDD.Uppgift1
             }
         }
 
+        #endregion
 
-
-
+        #region DIVISION METHODS
 
         // DIVIDE
         public double DivideFromInput(string inputA, string inputB)
@@ -67,6 +70,10 @@ namespace FinalAssignment.UppgifterTDD.Uppgift1
             }
         }
 
+        #endregion
+
+        #region MULTIPLICATION METHODS
+
         // MULTIPLY
         public double MultiplyFromInput(string inputA, string inputB)
         {
@@ -80,6 +87,10 @@ namespace FinalAssignment.UppgifterTDD.Uppgift1
             }
         }
 
+        #endregion
+
+        #region SUBTRACTION METHODS
+
         // SUBTRACT
         public double SubstractFromInput(string inputA, string inputB)
         {
@@ -92,11 +103,10 @@ namespace FinalAssignment.UppgifterTDD.Uppgift1
                 throw new ArgumentException("Ogiltig inmatning! Ange giltiga siffror.");
             }
         }
+
+        #endregion
     }
 }
-
-
-
 
 
 

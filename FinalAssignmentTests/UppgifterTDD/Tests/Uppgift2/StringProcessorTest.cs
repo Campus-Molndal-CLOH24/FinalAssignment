@@ -18,108 +18,162 @@ namespace FinalAssignmentTest.Tests.Uppgift2
             var actual = processor.Reverse(input);  // Kör metoden med input
 
             // Assert
-            Assert.AreEqual(expected, actual);//"Testet misslyckas eftersom Reverse-metoden inte fungerar som förväntat.");
+            Assert.AreEqual(expected, actual); // Testet ska kontrollera att Reverse fungerar korrekt
         }
-        // ToLower 
-        
 
         [TestMethod]
         public void ToLowerWord_ValidString_ReturnsLowercaseString()
         {
             // Arrange
-            var processor = new StringProcessor();  // Skapar en instans av klassen vi testar
-            var input = "StringTest";               // Sträng att testa
-            var expected = "stringtest";             // Förväntat resultat (omvänd sträng)
+            var processor = new StringProcessor();
+            var input = "StringTest";
+            var expected = "stringtest";
 
             // Act
-            var actual = processor.ToLowerWord(input);  // Kör metoden med input
+            var actual = processor.ToLowerWord(input);
 
             // Assert
-            Assert.AreEqual(expected, actual);//"Testet misslyckas eftersom ToLower-metoden inte fungerar som förväntat.");
-        
-    }       //ToUpper
-         [TestMethod]
-    public void ToUpperWord_ValidString_ReturnsUppercaseString()
-    {
-        // Arrange
-        var processor = new StringProcessor();  // Skapar en instans av klassen vi testar
-        var input = "StringTest";               // Sträng att testa
-        var expected = "STRINGTEST";             // Förväntat resultat (omvänd sträng)
-
-        // Act
-        var actual = processor.ToUpperWord(input);  // Kör metoden med input
-
-        // Assert
-        Assert.AreEqual(expected, actual);//"Testet misslyckas eftersom ToUpper-metoden inte fungerar som förväntat.");
-    }
-        //RemoveSwedishCharacters
+            Assert.AreEqual(expected, actual);
+        }
 
         [TestMethod]
-        public void RemoveSwedishCharacters()
+        public void ToUpperWord_ValidString_ReturnsUppercaseString()
         {
             // Arrange
-            var processor = new StringProcessor();  // Skapar en instans av klassen vi testar
-            var input = "Hejåäö";  // Sträng att testa
+            var processor = new StringProcessor();
+            var input = "StringTest";
+            var expected = "STRINGTEST";
 
             // Act
-            var actual = processor.OnlyEnglsihLetters(input);  // Nästa steg implementera så att testet går igenom, steg 3 refaktorisera 
+            var actual = processor.ToUpperWord(input);
 
             // Assert
-            Assert.IsFalse(actual.Contains("å"), "Strängen innehåller otillåtna tecken 'å'");//går inte att använda StringAssert.DoesNotContain
-            Assert.IsFalse(actual.Contains("ä"), "Strängen innehåller otillåtna tecken 'ä'");
-            Assert.IsFalse(actual.Contains("ö"), "Strängen innehåller otillåtna tecken 'ö'");
-            Assert.IsFalse(actual.Contains("Å"), "Strängen innehåller otillåtna tecken 'Å'");
-            Assert.IsFalse(actual.Contains("Ä"), "Strängen innehåller otillåtna tecken 'Ä'");
-            Assert.IsFalse(actual.Contains("Ö"), "Strängen innehåller otillåtna tecken 'Ö'");
+            Assert.AreEqual(expected, actual);
         }
-    }
 
-    //NullString
-    namespace FinalAssignmentTest.Tests.Uppgift2
-    {
-        [TestClass]
-        public class StringProcessorTest_NullMethods
+        [TestMethod]
+        public void RemoveSwedishCharacters_ReturnsStringWithoutSwedishLetters()
         {
-            [TestMethod]
-            public void ToLowerWordNull_NullString_ReturnsEmptyString()
-            {
-                var processor = new StringProcessor();
-                var result = processor.ToLowerWordNull(null);  // Skickar in null
+            // Arrange
+            var processor = new StringProcessor();
+            var input = "Hejåäö";
+            var expected = "Hejaao";  // Resultatet där svenska tecken är ersatta
 
-                Assert.AreEqual(string.Empty, result);  // Kontrollera att det returneras en tom sträng
-            }
+            // Act
+            var actual = processor.OnlyEnglsihLetters(input);
 
-            [TestMethod]
-            public void ToUpperWordNull_NullString_ReturnsEmptyString()
-            {
-                var processor = new StringProcessor();
-                var result = processor.ToUpperWordNull(null);  // Skickar in null
-
-                Assert.AreEqual(string.Empty, result);  // Kontrollera att det returneras en tom sträng
-            }
-
-            [TestMethod]
-            public void ToLowerCaseNull_NullString_ReturnsEmptyString()
-            {
-                var processor = new StringProcessor();
-                var result = processor.ToLowerCaseNull(null);  // Skickar in null
-
-                Assert.AreEqual(string.Empty, result);  // Kontrollera att det returneras en tom sträng
-            }
-
-            [TestMethod]
-            public void ToUpperCaseNull_NullString_ReturnsEmptyString()
-            {
-                var processor = new StringProcessor();
-                var result = processor.ToUpperCaseNull(null);  // Skickar in null
-
-                Assert.AreEqual(string.Empty, result);  // Kontrollera att det returneras en tom sträng
-            }
+            // Assert
+            Assert.AreEqual(expected, actual);
         }
 
-            //NYA TESTER 
+        [TestMethod]
+        public void ToLowerWordNull_NullString_ReturnsEmptyString()
+        {
+            // Arrange
+            var processor = new StringProcessor();
 
+            // Act
+            var result = processor.ToLowerWordNull(null);
 
+            // Assert
+            Assert.AreEqual(string.Empty, result);
+        }
 
+        [TestMethod]
+        public void ToUpperWordNull_NullString_ReturnsEmptyString()
+        {
+            // Arrange
+            var processor = new StringProcessor();
+
+            // Act
+            var result = processor.ToUpperWordNull(null);
+
+            // Assert
+            Assert.AreEqual(string.Empty, result);
+        }
+
+        [TestMethod]
+        public void ToLowerCaseNull_NullString_ReturnsEmptyString()
+        {
+            // Arrange
+            var processor = new StringProcessor();
+
+            // Act
+            var result = processor.ToLowerCaseNull(null);
+
+            // Assert
+            Assert.AreEqual(string.Empty, result);
+        }
+
+        [TestMethod]
+        public void ToUpperCaseNull_NullString_ReturnsEmptyString()
+        {
+            // Arrange
+            var processor = new StringProcessor();
+
+            // Act
+            var result = processor.ToUpperCaseNull(null);
+
+            // Assert
+            Assert.AreEqual(string.Empty, result);
+        }
+
+        [TestMethod]
+        public void ToUpperCase_ValidString_ReturnsCorrectCapitalizedString()
+        {
+            // Arrange
+            var processor = new StringProcessor();
+            var input = "hello";
+            var expected = "Hello";  // Första bokstaven stor
+
+            // Act
+            var actual = processor.ToUpperCaseNull(input);
+
+            // Assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void ToLowerCase_ValidString_ReturnsCorrectLowercaseString()
+        {
+            // Arrange
+            var processor = new StringProcessor();
+            var input = "Hello";
+            var expected = "hello";  // Första bokstaven liten
+
+            // Act
+            var actual = processor.ToLowerCaseNull(input);
+
+            // Assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void Reverse_EmptyString_ReturnsEmptyString()
+        {
+            // Arrange
+            var processor = new StringProcessor();
+            var input = "";
+            var expected = "";
+
+            // Act
+            var actual = processor.Reverse(input);
+
+            // Assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void Reverse_NullString_ReturnsEmptyString()
+        {
+            // Arrange
+            var processor = new StringProcessor();
+
+            // Act
+            var actual = processor.Reverse(null);
+
+            // Assert
+            Assert.AreEqual(string.Empty, actual);
+        }
     }
 }
