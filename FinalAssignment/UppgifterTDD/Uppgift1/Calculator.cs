@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FinalAssignment.UppgifterTDD.Uppgift1
 {
@@ -10,7 +6,9 @@ namespace FinalAssignment.UppgifterTDD.Uppgift1
     {
         #region ADDITION METHODS
 
-        
+        /// <summary>
+        /// Summerar två inmatade värden som strängar efter konvertering till tal.
+        /// </summary>
         public double AddFromInput(string inputA, string inputB)
         {
             if (double.TryParse(inputA, out double a) && double.TryParse(inputB, out double b))
@@ -23,7 +21,9 @@ namespace FinalAssignment.UppgifterTDD.Uppgift1
             }
         }
 
-        
+        /// <summary>
+        /// Validerad addition av två inmatade värden.
+        /// </summary>
         public double AddFromInputWithValidation(string inputA, string inputB)
         {
             if (double.TryParse(inputA, out double a) && double.TryParse(inputB, out double b))
@@ -36,7 +36,9 @@ namespace FinalAssignment.UppgifterTDD.Uppgift1
             }
         }
 
-        
+        /// <summary>
+        /// Summerar även negativa och positiva tal.
+        /// </summary>
         public double AddNegativePositive(string inputA, string inputB)
         {
             if (double.TryParse(inputA, out double a) && double.TryParse(inputB, out double b))
@@ -53,7 +55,9 @@ namespace FinalAssignment.UppgifterTDD.Uppgift1
 
         #region DIVISION METHODS
 
-       
+        /// <summary>
+        /// Dividerar två inmatade värden som strängar.
+        /// </summary>
         public double DivideFromInput(string inputA, string inputB)
         {
             if (double.TryParse(inputA, out double a) && double.TryParse(inputB, out double b))
@@ -74,7 +78,9 @@ namespace FinalAssignment.UppgifterTDD.Uppgift1
 
         #region MULTIPLICATION METHODS
 
-        
+        /// <summary>
+        /// Multiplicerar två inmatade värden som strängar.
+        /// </summary>
         public double MultiplyFromInput(string inputA, string inputB)
         {
             if (double.TryParse(inputA, out double a) && double.TryParse(inputB, out double b))
@@ -87,6 +93,9 @@ namespace FinalAssignment.UppgifterTDD.Uppgift1
             }
         }
 
+        /// <summary>
+        /// Multiplicerar även negativa och positiva tal.
+        /// </summary>
         public double MultiplyNegativePositive(string inputA, string inputB)
         {
             if (double.TryParse(inputA, out double a) && double.TryParse(inputB, out double b))
@@ -103,7 +112,9 @@ namespace FinalAssignment.UppgifterTDD.Uppgift1
 
         #region SUBTRACTION METHODS
 
-
+        /// <summary>
+        /// Subtraherar två inmatade värden som strängar.
+        /// </summary>
         public double SubstractFromInput(string inputA, string inputB)
         {
             if (double.TryParse(inputA, out double a) && double.TryParse(inputB, out double b))
@@ -116,6 +127,9 @@ namespace FinalAssignment.UppgifterTDD.Uppgift1
             }
         }
 
+        /// <summary>
+        /// Subtraherar även negativa och positiva tal.
+        /// </summary>
         public double SubstractNegativePositive(string inputA, string inputB)
         {
             if (double.TryParse(inputA, out double a) && double.TryParse(inputB, out double b))
@@ -126,14 +140,11 @@ namespace FinalAssignment.UppgifterTDD.Uppgift1
             {
                 throw new ArgumentException("Ogiltig inmatning! Ange giltiga siffror.");
             }
-
         }
 
         #endregion
     }
 }
-
-
 
 
 
