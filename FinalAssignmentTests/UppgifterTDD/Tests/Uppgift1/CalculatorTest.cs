@@ -6,7 +6,8 @@ namespace FinalAssignmentTest.Tests.Uppgift1
     [TestClass]
     public class CalculatorTest
     {
-        private Calculator _calculator;
+        private Calculator? _calculator;  // Tillåter att det kan vara null initialt
+
 
         [TestInitialize]
         public void Setup()
