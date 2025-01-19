@@ -131,6 +131,19 @@ Det blev så bra så jag applicerade det på övriga klasser också.
 
 
 
+### Project Tested by Avinash Chowdary Bodduluri
 
-
+I have started by cloning the project and run all the tests created by Maria. Project seems to be working as it should. It has all essential test scenarios for both Calculator class and StringProcessor class.
+I have tested an extra test case that tests StringProcessor ReverseString when give string has space in it. Test passed. Apart from this i couldn't think of what else can be tested. Great work by Maria.
+```    
+        [TestMethod]
+        public void Reverse_StringwithSpace_ReturnsReversedString()
+        {
+            var processor = new StringProcessor();
+            var input = "Hello World!";
+            var expected = "!dlroW olleH";
+            var actual = processor.Reverse(input);
+            Assert.AreEqual(expected, actual);
+        }
+```
 
