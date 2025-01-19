@@ -25,7 +25,7 @@ När jag började implementera metoderna för de olika räknesätten, använde j
 - Om någon försöker mata in ett decimaltal (t.ex. `4.5`) eller en ogiltig inmatning som `"abc"`, skulle applikationen krascha.
 
 #### Lösningen – `double` och `TryParse`:
-För att lösa detta problem valde jag att använda **`double`** för att kunna hantera både heltal och decimaltal. Dessutom använder jag **`TryParse`** för att hantera ogiltig inmatning.
+För att lösa detta problem valde jag att använda **`double`** som datatyp för att kunna hantera både heltal och decimaltal. Dessutom använder jag **`TryParse`** för att hantera ogiltig inmatning som abc eller null.
 Innan jag gav mig på lösningen så frågade jag ChatGtp om min tanke var korrekt, och att detta skulle kunna säkerställa bättre "säkerhet", för eventuella försöka att krasha koden. Svaret blev ja!
 
 **Fördelarna:**
@@ -131,7 +131,7 @@ Det blev så bra så jag applicerade det på övriga klasser också.
 
 
 
-### Project Tested by Avinash Chowdary Bodduluri
+## Project Tested by Avinash Chowdary Bodduluri
 
 I have started by cloning the project and run all the tests created by Maria. Project seems to be working as it should. It has all essential test scenarios for both Calculator class and StringProcessor class.
 I have tested an extra test case that tests StringProcessor ReverseString when give string has space in it. Test passed. Apart from this i couldn't think of what else can be tested. Great work by Maria.
