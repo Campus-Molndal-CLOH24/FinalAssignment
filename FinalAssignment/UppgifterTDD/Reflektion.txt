@@ -11,8 +11,8 @@ Jag hade oturen att få knas med det mesta, och det tog mig en hel del tid att l
 
 -  Att kunna starta ett repository på GitHub, via VS.
 -  Att kunna starta ett repsitory på GitHub, via GitHub/öppna ett repository skapat på GitHub "via open with VS".
--  Att kunna pusha upp filer till GitHu
--  Att kunna pulla ner filer från GitHub.
+-  Att kunna pusha upp filer till GitHub.
+-  Att kunna göra pull request från GitHub.
 -  Meta Data fel, som jag inte riktigt förstod mig på.
 -  Hälften av testerna gick inte över till GitHub, och jag vet inte varför.
 -  Jag hade problem med att få till en bra struktur på mina filer.
