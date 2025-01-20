@@ -52,41 +52,90 @@ public double DivideFromInput(string inputA, string inputB)
 }
 ```
 
+## Metoder
+
+### Addition
+
+#### AddFromInput
+
+- Tar två stränginmatningar (inputA, inputB), försöker konvertera dem till double och returnerar summan. Om inmatningen inte kan konverteras till double, kastar den ett felmeddelande.
+
+  
+#### AddFromInputWithValidation
+
+- Liknar AddFromInput. Validerar att inmatningen är korrekt (kan konverteras till double) innan den utför addition.
+
+
+#### AddNegativePositive
+
+- Beräknar summan av två nummer (negativa eller positiva) från stränginmatningar. Validerar och kastar fel för ogiltig inmatning.
+
+### Division
+
+#### DivideFromInput
+
+- Tar två stränginmatningar, konverterar dem till double och returnerar kvoten (division).
+Validerar att det andra talet inte är noll (division med noll är inte tillåten). Om det är ogiltig inmatning eller om det andra talet är noll, kastas ett felmeddelande.
+
+
+### Multiplikation
+
+#### MultiplyFromInput
+
+- Tar två stränginmatningar, konverterar dem till double och returnerar produkten.
+- Validerar att inmatningen är giltig.
+
+
+#### MultiplyNegativePositive
+
+- Utför multiplikation mellan två nummer (negativa eller positiva). Fungerar som MultiplyFromInput men med särskilt fokus på hantering av negativa och positiva tal.
+
+  
+### Substract
+
+#### SubstractFromInput
+
+- Tar två stränginmatningar, konverterar dem till double och returnerar differensen (subtraktion).
+- Validerar att inmatningen är giltig.
+  
+#### SubstractNegativePositive
+
+- Subtraherar två nummer (negativa eller positiva). Liknar SubstractFromInput men hanterar negativa och positiva tal.
+  
+
 ## Uppgift 2 - Stränghantering 
 
 
 StringProcessor är en klass som innehåller metoder för att bearbeta och manipulera strängar. Klassen innehåller olika metoder för att hantera vanliga textoperationer som att omvandla text till stora eller små bokstäver, reversera text, samt hantera specialfall som null och svenska tecken.
 
-## Innehållsförteckning
-
 ### Metoder 
 
-1. Reverse
+1. #### Reverse
 Beskrivning: Vänder en sträng baklänges.
 Parameter: string? input (sträng som ska vändas).
 Returnerar: En omvänd sträng eller en tom sträng om input är null.
 
-3. ToLowerWord
+3. #### ToLowerWord
 Beskrivning: Konverterar hela strängen till små bokstäver.
 Parameter: string? input.
 Returnerar: En sträng i små bokstäver eller tom sträng om input är null.
 
-5. ToUpperWord
+5. #### ToUpperWord
 Beskrivning: Konverterar hela strängen till stora bokstäver.
 Parameter: string? input.
 Returnerar: En sträng i stora bokstäver eller tom sträng om input är null.
 
-7. ToLowerCaseNull
+7. #### ToLowerCaseNull
 Beskrivning: Gör den första bokstaven i en sträng liten. Hanterar null och tomma strängar.
 Parameter: string? input.
 Returnerar: En sträng med första bokstaven i små bokstäver eller tom sträng.3
 
-9. ToUpperCaseNull
+9. #### ToUpperCaseNull
 Beskrivning: Gör den första bokstaven i en sträng stor. Hanterar null och tomma strängar.
 Parameter: string? input.
 Returnerar: En sträng med första bokstaven i stor bokstav eller tom sträng.
 
-11. OnlyEnglsihLetters
+11. #### OnlyEnglsihLetters
 Beskrivning: Ersätter svenska tecken (å, ä, ö, Å, Ä, Ö) med deras engelska motsvarigheter (a, o).
 Parameter: string? input.
 Returnerar: En sträng utan svenska specialtecken.
