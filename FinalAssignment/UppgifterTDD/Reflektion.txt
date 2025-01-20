@@ -1,9 +1,9 @@
 ﻿# Reflektion över projektet
 
 
-Jag hade verkligen sett fram emot det här arbetet, detta då jag någonstans har känt att det här är lite "jag".
-Dessvärre så ville det sig inte riktigt som jag hade tänkt mig. Jag hade hoppats på att få en bättre start på projekt, att jag inte missat så mycket som
-jag gjorde på den här kursen. Jag hade hoppats på att jag skulle ha en bättre förståelse för hur jag skulle kunna använda mig av de olika verktygen som jag har lärt mig.
+Jag hade verkligen sett fram emot det här arbetet, då jag någonstans har känt att det här är lite "jag".
+Dessvärre så ville det sig inte riktigt som jag hade tänkt mig. Jag hade hoppats på att få en bättre start på projekt, och att jag inte missat så mycket som
+jag gjorde på den här kursen. 
 
 Min plan var given att jag skulle försöka klara av alla uppgifterna, men starten för projektet, och första halvan blev inte riktigt som jag hade tänkt mig.
 
@@ -23,9 +23,11 @@ Jag hade oturen att få knas med det mesta, och det tog mig en hel del tid att l
 
 Det var som sagt en hel del som inte ville som jag ville. Men jag gav inte upp, jag kämpade på, och jag lyckades tillslut få två testklasser som jag är nöjd med. 
 
-Uppgiften i sig var rolig, givande och jag har lärt mig väldigt mycket, även om det finns mer att lära sig. 
+Uppgiften i sig var rolig, givande och jag har lärt mig väldigt mycket, även om det finns mer att lära, och jag kommer att göra VG uppgifterna för egen del när tillfälle ges. 
 
-Ska jag vara besviken över något så är det väl att jag inte lyckas ta mig tid att göra uppgifterna för VG. Jag hade verkligen velat göra det, men ibland så räcker inte tiden till av olika anledningar.
+Ska jag vara "besvike" över något så är det väl att jag inte lyckas ta mig tid att göra uppgifterna för VG. Jag hade verkligen velat göra det, men ibland så räcker inte tiden till av olika anledningar.
 Mycket av det jag gjort har jag tänkt mig fram till, exempevis att jag skulle använda mig av double och try.parse, samma gäller för stringprocess. 
 Det finns givetvis så många fler sätt att göra tester på, men det är inget som säger att jag inte kommer att göra det i framtiden, jag har i alla fall en bra bas känner jag!
+
+I det stora hela och med de förutsättningar jag hade, så är jag nöjd med min insats. 
 
