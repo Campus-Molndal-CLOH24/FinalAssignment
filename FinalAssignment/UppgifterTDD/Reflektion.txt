@@ -16,7 +16,7 @@ Jag hade oturen att få knas med det mesta, och det tog mig en hel del tid att l
 -  Meta Data fel, som jag inte riktigt förstod mig på.
 -  Hälften av testerna gick inte över till GitHub, och jag vet inte varför.
 -  Jag hade problem med att få till en bra struktur på mina filer.
--  Jag fick installera om VS.
+-  Jag fick reparera om VS.
 -  Jag gjorde totalt 5 försök genom att skapa nya repositories m.m.
 -  Jag jade 2 main i VS utöver den "riktiga" mainen",men bara en på GitHub.
 
