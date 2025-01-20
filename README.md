@@ -101,6 +101,32 @@ Validerar att det andra talet inte är noll (division med noll är inte tillåte
 #### SubstractNegativePositive
 
 - Subtraherar två nummer (negativa eller positiva). Liknar SubstractFromInput men hanterar negativa och positiva tal.
+
+  ## Klassdiagram
+
+  ![Calculator Diagram](https://supabase.mermaidchart.com/storage/v1/object/public/chatgpt-diagrams/2025-01-20/57bfed9e-dae9-4a67-b618-7bb0c694387c.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
 
 ## Uppgift 2 - Stränghantering 
@@ -168,6 +194,16 @@ OnlyEnglsihLetters("Gröt med Å, Ä och Ö") → Returnerar "Grot med A, A och 
 4. Blandade stora och små bokstäver
 ToUpperCaseNull("hej") → Returnerar "Hej".
 ToLowerCaseNull("HEJ") → Returnerar "hEJ".
+
+
+
+
+### Klassdiagram 
+
+![StringProcessor Diagram](https://supabase.mermaidchart.com/storage/v1/object/public/chatgpt-diagrams/2025-01-20/9e9743fe-90d4-4698-9de7-05d68bd2dcf2.png)
+
+
+
 
 
 ### Refaktorisera 
